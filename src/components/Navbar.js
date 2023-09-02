@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faShieldHalved, faTimes, navMenu } from '@fortawesome/free-solid-svg-icons'
 import Button from "./Button";
+import './Navbar.css';
 
 
 function Navbar() {
@@ -12,7 +13,7 @@ function Navbar() {
     const handleClick = () => {
         setClick(!click);
     };
-    
+
     const closeMobileMenu = () => setClick(false);
 
     const showButton = () => {
