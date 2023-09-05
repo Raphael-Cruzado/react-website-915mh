@@ -3,12 +3,12 @@ import Navbar from '../src/components/Navbar';
 import {
   Route
 } from "react-router-dom";
+// import './App.css'
 
 function App() {
   return (
     <>
       <Navbar />
-      {/* <Route path='/services' component={Services} /> */}
     </>
   )
   
