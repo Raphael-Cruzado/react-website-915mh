@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import App from './App.js';
 import {
-    createBrowserRouter,
     createRoutesFromElements,
     Route,
+    createBrowserRouter,
     RouterProvider,
   } from "react-router-dom";
-import Navbar from './components/Navbar';
+import './App.css';
+
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<App />}>
-            <Route path="/" element={<Navbar />} />
-        </Route>
-    )
+        <Route path="/" element={<App />} />
+  )
 );
 
 
