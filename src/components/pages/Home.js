@@ -1,4 +1,4 @@
-import '../../App.js';
+import '../../App.css';
 import HeroSection from '../HeroSection.js';
 
 function Home () {

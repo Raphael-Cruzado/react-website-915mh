@@ -1,8 +1,7 @@
 import React from 'react';
 import Navbar from '../src/components/Navbar';
 import {
-  Routes,
-  Route
+  Routes, Route
 } from "react-router-dom";
 import './App.css';
 import Home from './components/pages/Home';
@@ -15,10 +14,10 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/services' component={Services} />
-        <Route path='/products' component={Products} />
-        <Route path='/sign-up' component={SignUp} />
+        <Route path='/' exact element={<Home />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/products' element={<Products />} />
+        <Route path='/sign-up' element={<SignUp />} />
       </Routes>
     </>
   )
